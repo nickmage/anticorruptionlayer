@@ -5,7 +5,6 @@ import com.example.anticorruptionlayer.model.supplier.SupplierOrder;
 import com.example.anticorruptionlayer.service.TransferService;
 import io.micronaut.http.annotation.Body;
 import io.micronaut.http.annotation.Controller;
-import io.micronaut.http.annotation.Get;
 import io.micronaut.http.annotation.Post;
 import lombok.RequiredArgsConstructor;
 
@@ -19,8 +18,5 @@ public class AnticorruptionController {
     public SupplierOrder test(@Body CustomerOrder customerOrder){
         return service.toSupplierOrder(customerOrder);
     }
-    @Get("/order")
-    public SupplierOrder testGet(){
-        return service.toSupplierOrder(null);
-    }
+
 }
