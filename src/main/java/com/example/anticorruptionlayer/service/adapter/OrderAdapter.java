@@ -2,14 +2,14 @@ package com.example.anticorruptionlayer.service.adapter;
 
 import com.example.anticorruptionlayer.model.customer.SparePart;
 import com.example.anticorruptionlayer.model.supplier.Item;
-import org.springframework.stereotype.Service;
+import jakarta.inject.Singleton;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-@Service
+@Singleton
 public class OrderAdapter {
 
     public List<Item> toSupplierOrder(Map<String, List<SparePart>> sparePartsOrder) {

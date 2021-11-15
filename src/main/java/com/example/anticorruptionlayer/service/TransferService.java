@@ -6,10 +6,10 @@ import com.example.anticorruptionlayer.service.adapter.DateAdapter;
 import com.example.anticorruptionlayer.service.adapter.OrderAdapter;
 import com.example.anticorruptionlayer.service.adapter.OrderTypeMatcher;
 import com.example.anticorruptionlayer.service.adapter.ServiceStationAdapter;
+import jakarta.inject.Singleton;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
 
-@Service
+@Singleton
 @RequiredArgsConstructor
 public class TransferService {
 

@@ -1,14 +1,11 @@
 package com.example.anticorruptionlayer.service.adapter;
 
-import org.springframework.stereotype.Service;
+import jakarta.inject.Singleton;
 
-import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
-@Service
+@Singleton
 public class DateAdapter {
-
-    private final DateTimeFormatter dateFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
     public Date toOrderAcceptanceDate(Date customerOrderDate) {
         return new Date();

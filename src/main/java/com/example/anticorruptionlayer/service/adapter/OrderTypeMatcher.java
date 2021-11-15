@@ -1,10 +1,10 @@
 package com.example.anticorruptionlayer.service.adapter;
 
-import org.springframework.stereotype.Service;
+import jakarta.inject.Singleton;
 
 import static com.example.anticorruptionlayer.service.OrderType.REGULAR;
 
-@Service
+@Singleton
 public class OrderTypeMatcher {
 
     public String getOrderType(){

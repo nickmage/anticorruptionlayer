@@ -1,9 +1,9 @@
 package com.example.anticorruptionlayer.service.adapter;
 
 import com.example.anticorruptionlayer.model.customer.ServiceStation;
-import org.springframework.stereotype.Service;
+import jakarta.inject.Singleton;
 
-@Service
+@Singleton
 public class ServiceStationAdapter {
 
     public String toService(ServiceStation serviceStation){
