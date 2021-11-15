@@ -16,6 +16,7 @@ public class AnticorruptionController {
 
     @Post("/order")
     public SupplierOrder test(@Body CustomerOrder customerOrder){
+        // Here must be a call to some external subsystem, but in this example let's restrict ourselves to just returning a result of adaptation
         return service.toSupplierOrder(customerOrder);
     }
 
